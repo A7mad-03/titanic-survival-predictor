@@ -131,7 +131,7 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 # ---------------------------------------------------------------------------
 @st.cache_resource
 def load_model():
-    return joblib.load(r"titanic_app\titanic_model.pkl")
+    return joblib.load("titanic_model.pkl")
 
 bundle = load_model()
 model = bundle["model"]
